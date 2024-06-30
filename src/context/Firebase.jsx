@@ -4,8 +4,7 @@ import { createContext, useContext } from "react";
 import { initializeApp } from "firebase/app";
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import { getDatabase, ref, set } from "firebase/database";
-import dotenv from 'dotenv';
-dotenv.config();
+
 
 
 const firebaseConfig = {
