@@ -1,11 +1,21 @@
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const SideNav = () => {
   const [isVisible, setisVisible] = useState(true);
-  console.log(isVisible);
 
+console.log(window.innerWidth);
+
+
+
+useEffect(()=>{
+  if (window.innerWidth<1060) {
+    setisVisible(false)
+  }else{
+    setisVisible(true)
+  }
+})
   const handleVisiblity = () => {
     setisVisible(!isVisible);
   };

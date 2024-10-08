@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 import axios from "../../utils/axios";
 import Card from "../partials/Card";
 import ShimmerCard from "../shimmer/ShimmerCard";
+import Footer from "../Footer";
 
 const Movies = () => {
   const [category, setCategory] = useState("now_playing");
@@ -76,6 +77,7 @@ const Movies = () => {
       ) : (
         <ShimmerCard />
       )}
+      <Footer/>
     </div>
   );
 };

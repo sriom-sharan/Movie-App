@@ -10,6 +10,7 @@ import { FaImdb } from "react-icons/fa6";
 import Marquee from "react-fast-marquee";
 import { IoPlayOutline } from "react-icons/io5";
 import HorizontalCards from "./partials/HorizontalCards";
+import Footer from "./Footer";
 
 const TVDetail = () => {
   const { id } = useParams();
@@ -173,6 +174,7 @@ const TVDetail = () => {
           <HorizontalCards data={info.similar.results} />
         </div>
       )}
+      <Footer/>
     </div>
   ) : (
     <DetailPage />

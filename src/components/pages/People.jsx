@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import axios from "../../utils/axios";
 import Card from "../partials/Card";
 import ShimmerCard from "../shimmer/ShimmerCard";
+import Footer from "../Footer";
 
 const People = () => {
   // This will change title dynamically.
@@ -74,7 +75,7 @@ const People = () => {
       ) : (
         <ShimmerCard />
       )}
-
+  <Footer/>
     </div>
   );
 };

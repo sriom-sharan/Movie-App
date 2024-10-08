@@ -7,6 +7,7 @@ import HorizontalCards from "../partials/HorizontalCards";
 import Dropdown from "../partials/Dropdown";
 import Shimmer from "../shimmer/Shimmer";
 import { Outlet } from 'react-router-dom';
+import Footer from "../Footer";
 
 
 const Home = () => {
@@ -61,7 +62,9 @@ const Home = () => {
     </div>
 
     <HorizontalCards data={trending}/></>:<Shimmer />}
+   <Footer/>
     </div>
+    
     </div>
   )
 }

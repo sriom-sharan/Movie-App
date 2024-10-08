@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import axios from "../../utils/axios";
 import Card from "../partials/Card";
 import ShimmerCard from "../shimmer/ShimmerCard";
+import Footer from "../Footer";
 
 const TVshows = () => {
   const [page, setPage] = useState(1);
@@ -78,6 +79,7 @@ const TVshows = () => {
       ) : (
         <ShimmerCard />
       )}
+      <Footer/>
     </div>
   );
 };

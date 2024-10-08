@@ -13,6 +13,7 @@ import { FaInstagram } from "react-icons/fa6";
 import { IoLogoTiktok } from "react-icons/io5";
 import { BsTwitterX } from "react-icons/bs";
 import iamge from "../assets/no-image.jpg";
+import Footer from "./Footer";
 
 const PersonDetail = () => {
   const { id } = useParams();
@@ -187,6 +188,7 @@ const PersonDetail = () => {
 
         </div>
       </div>
+      <Footer/>
     </div>
   ) : (
     <DetailPage />

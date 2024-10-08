@@ -11,6 +11,7 @@ import Marquee from "react-fast-marquee";
 import { IoPlayOutline } from "react-icons/io5";
 import HorizontalCards from "./partials/HorizontalCards";
 import noImage from '../assets/no-image.jpg'
+import Footer from "./Footer";
 
 const MovieDetail = () => {
   const { id } = useParams();
@@ -157,7 +158,7 @@ const MovieDetail = () => {
         </h1>
         {info.similar && <HorizontalCards data={info.similar.results} />}
       </div>}
-
+      <Footer/>
     </div>
   ) : (
     <DetailPage />
